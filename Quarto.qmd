@@ -16,20 +16,20 @@ When you click the **Render** button a document will be generated that includes 
 ```{r}
 2+6+3
 ```
+Aquí creo un data frame
 
 ```{r}
-
+df <- data.frame(x=10:20, y= 20:30)
+table(df)
 ```
 
-```{r}
+Este data frame tiene `r nrow(df)` filas y `r ncol(df)` columnas, la media de la columna x es `r mean(df$x)`, y la media de la columna y es `r mean(df$y)`
 
-```
-
-You can add options to executable code like this
+para que no salga el código en el render:
 
 ```{r}
 #| echo: false
-2 * 2
-```
+df <- data.frame(x=10:20, y= 20:30)
+table(df)
 
-The `echo: false` option disables the printing of code (only output is displayed).
+```
