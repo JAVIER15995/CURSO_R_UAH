@@ -25,8 +25,9 @@ table(df)
 
 Este data frame tiene `r nrow(df)` filas y `r ncol(df)` columnas, la media de la columna x es `r mean(df$x)`, y la media de la columna y es `r mean(df$y)`
 
-no se lo que estoy haciendo
-para que no salga el código en el render:
+
+para que no salga el código en el render: esto es lo que voy a modificar ahora a ver que sale 
+
 
 ```{r}
 #| echo: false
