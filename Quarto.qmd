@@ -14,7 +14,7 @@ Quarto enables you to weave together content and executable code into a finished
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-2+6+3
+2+6+3+4
 ```
 Aquí creo un data frame
 
@@ -25,11 +25,11 @@ table(df)
 
 Este data frame tiene `r nrow(df)` filas y `r ncol(df)` columnas, la media de la columna x es `r mean(df$x)`, y la media de la columna y es `r mean(df$y)`
 
+
 para que no salga el código en el render: esto es lo que voy a modificar ahora a ver que sale 
+
 
 ```{r}
 #| echo: false
 df <- data.frame(x=10:20, y= 20:30)
 table(df)
-
-```
